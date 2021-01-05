@@ -1,0 +1,3 @@
+sad:files/sad qouats.txt
+come:files/come quotes.txt
+happy:files/happy qouats.txt
