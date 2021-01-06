@@ -119,8 +119,8 @@ def reply_subreddit(subreddit,words_dict,comments_replied,comments_replied_path,
                     # else :
                     #     print('not found this word',word,'in comment ',comment.id ,'in the subreddit', sub )
                 if sleep == 1:  
-                    # print('\nsleep' , sleep)                          
-                    time.sleep(660)
+                    print('\nwait 10 seconds for search about next comment')                          
+                    time.sleep(10)
             if breaked == limit_comment_sub :
                 # print('breaked -> ',breaked)
                 break
@@ -170,7 +170,7 @@ def read_env(file_path):
 
 
 def main():
-    env_settings,error_lines,errors=read_env(r'env.txt')
+    env_settings,error_lines,errors=read_env(r'files/env.txt')
     if error_lines==[] and errors==False and env_settings=={}:
         print('env file not found')
     elif error_lines==[] and errors==False and env_settings!={}:
